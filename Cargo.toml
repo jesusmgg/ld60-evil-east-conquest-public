@@ -1,0 +1,15 @@
+[package]
+name = "evil-east-conquest"
+version = "1.1.0"
+edition = "2021"
+
+[dependencies]
+macroquad = {version = "0.4.15", features = ["audio"]}
+nanoserde = { git = "https://github.com/not-fl3/nanoserde", rev = "d787368af9bdf9762e8d46185fe74be09adbef4b", default-features = false, features = ["std", "binary"] }
+
+# Macros
+paste = "1.0.15"
+
+# Asset decoding
+lewton = "0.9.4"
+image = { version = "0.24.9", default-features = false, features = ["png", "tga"] }
